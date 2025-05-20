@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Memory Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Pokémon Memory Game</h1>
+        <div class="controls">
+            <div class="difficulty-selection">
+                <button id="easy-difficulty" class="difficulty-button active" data-difficulty="easy">Easy</button>
+                <button id="medium-difficulty" class="difficulty-button" data-difficulty="medium">Medium</button>
+                <button id="hard-difficulty" class="difficulty-button" data-difficulty="hard">Hard</button>
+            </div>
+            <div class="game-actions">
+                <button id="reset-button">Reset</button>
+                <button id="start-button">Start!</button>
+            </div>
+            <button id="theme-toggle">Toggle Theme</button>
+        </div>
+        <div class="game-info hidden"> <p>Total Number of Pairs <span id="total-pairs">0</span></p>
+            <p>Number of Matches <span id="pairs-matched">0</span></p>
+            <p>Number of pair left <span id="pairs-left">0</span></p>
+            <p>Number of Clicks <span id="clicks">0</span></p>
+            <p><span id="initial-time-display">0</span> seconds. <span id="timer-display">0</span> seconds passed!</p>
+        </div>
+    </header>
+
+    <main>
+        <div id="game_grid">
+            </div>
+    </main>
+
+    <div id="message-overlay" class="hidden">
+        <p id="game-message"></p>
+    </div>
+</body>
+
+</html> 
